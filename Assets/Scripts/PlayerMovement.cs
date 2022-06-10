@@ -8,10 +8,10 @@ public class PlayerMovement : MonoBehaviour
     
     [SerializeField]  Animator _animator;
     [SerializeField]  FixedJoystick _joystick;
-    public CinemachineFreeLook camera;
-    public Joystick joystick;
+    //public CinemachineFreeLook camera;
+   // public Joystick joystick;
     bool facingRight = true;
-    public GameObject player;
+    //public GameObject player;
 
 
     // Start is called before the first frame update
@@ -21,8 +21,8 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        camera.m_XAxis.Value += joystick.Direction.x;
-        camera.m_YAxis.Value -= joystick.Direction.y / 100;
+        //camera.m_XAxis.Value += joystick.Direction.x;
+        //camera.m_YAxis.Value -= joystick.Direction.y / 100;
         //float h = Input.GetAxis("Horizontal");
         //float v = Input.GetAxis("Vertical");
         var h = _joystick.Horizontal;
