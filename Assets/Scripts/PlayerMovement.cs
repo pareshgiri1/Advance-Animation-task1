@@ -47,12 +47,5 @@ public class PlayerMovement : MonoBehaviour
         transform.eulerAngles = new Vector3(0, _joystick.Horizontal * 10 + _joystick.Vertical, 0); 
     }
 
-    public void TurnArround()
-    {
-        
-        facingRight = !facingRight;
-        Vector3 scaleChange = transform.localScale;
-        scaleChange.x *= -1;
-        transform.localScale = scaleChange;
-    }
+    
 }
